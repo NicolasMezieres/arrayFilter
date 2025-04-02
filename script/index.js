@@ -11,25 +11,24 @@ const heroes = [
   { name: "Martian Manhunter", power: 91, universe: "DC", isActive: true, isAlien: true },
 ];
 
-let heroesActive = heroes.filter((element) => element.isActive === true);
+const heroesActive = heroes.filter((element) => element.isActive === true);
 
-let heroesMarvel = heroes.filter((element) => element.universe === "Marvel");
+const heroesMarvel = heroes.filter((element) => element.universe === "Marvel");
 
-let heroesAlien = heroes.filter((element) => element.isAlien);
+const heroesAlien = heroes.filter((element) => element.isAlien);
 
-let heroesPower90OrMore = heroes.filter((element) => element.power >= 90);
+const heroesPower90OrMore = heroes.filter((element) => element.power >= 90);
 
-let heroesActiveHuman = heroes.filter((element) => !element.isAlien && element.isActive);
+const heroesActiveHuman = heroes.filter((element) => !element.isAlien && element.isActive);
 
-let heroesDCPower85OrMore = heroes.filter(
+const heroesDCPower85OrMore = heroes.filter(
   (element) => element.universe === "DC" && element.power >= 85
 );
 
-let heroesInactiveHuman = heroes.filter((element) => !element.isActive && !element.isAlien);
+const heroesInactiveHuman = heroes.filter((element) => !element.isActive && !element.isAlien);
 
-let heroesMan = heroes.filter((element) => element.name.toLowerCase().includes("man"));
+const heroesMan = heroes.filter((element) => element.name.toLowerCase().includes("man"));
 
-let heroesPairPower = heroes.filter((element) => element.power % 2 === 0);
+const heroesUnpairPower = heroes.filter((element) => element.power % 2 == 1);
 
-let heroes10CaractereName = heroes.filter((element) => element.name.length >= 10);
-console.log(heroes10CaractereName);
+const heroes10CaractereName = heroes.filter((element) => element.name.length >= 10);
